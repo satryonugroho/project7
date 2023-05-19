@@ -22,7 +22,7 @@ class InsuranceModel():
         return labelEncoder, oneHotEncoder, scallingStandar
 
     def runModel(self, data, typed='multi'):
-        path = os.getcwd()+"\\"+"modules\packages"+"\\"
+        path = os.getcwd()+"\\"+"module\packages"+"\\"
         model = pickle.load(
             open(path + 'model_InsuranceRecommendation.pkl', 'rb'))
         col_p = pickle.load(open(path + 'columnPreparation.pkl', 'rb'))
